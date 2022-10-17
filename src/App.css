@@ -1,38 +1,109 @@
-.App {
+button{
+  width: 80px;
+  height: 80px;
+  border: none;
+  background-color: rgb(236, 236, 236);
+  border-radius: 50% 50%;
+  cursor: pointer;
+  margin-left: 12px;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.game-name{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:hover{
+  scale: 1.1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box{
+  border: 8px solid #000;
+  width: 300px;
+  height: 430px;
+  text-align: center;
+  margin-top: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.item-img{
+  width: 200px;
+  height: 250px;
+}
+.main{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+}
+
+.btn{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+.Win{
+  border: 8px solid #2196f3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Lose{
+  border: 8px solid #e53935;
+}
+
+.Tie{
+  border: 8px solid #4caf50;
+}
+
+
+@media screen and (max-width:460px) {
+  .box{
+    border: 6px solid #000;
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    margin-top: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box h1{
+    font-size: 20px;
+  }
+  
+  .item-img{
+    width: 100px;
+    height: 90px;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .Win{
+    border: 6px solid #2196f3;
+  }
+  
+  .Lose{
+    border: 6px solid #e53935;
+  }
+  
+  .Tie{
+    border: 6px solid #4caf50;
+  }
+
+  button{
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: rgb(236, 236, 236);
+    border-radius: 50% 50%;
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 30px;
+    transition: 0.3s;
   }
 }
